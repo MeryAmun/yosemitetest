@@ -1,0 +1,39 @@
+.container {
+  height: 100vh;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: black;
+  margin: 1rem;
+  padding: 0 1rem;
+  border-radius: 5px;
+  color: whitesmoke;
+}
+h2,
+h1 {
+  text-align: center;
+}
+.title {
+  margin-bottom: 1rem;
+}
+.plan-title {
+  margin-bottom: 1rem;
+  background: black;
+  padding: 1rem;
+  color: #feeee9;
+}
+.heading {
+  font-weight: bold;
+}
+
+.plan {
+  background-color: #feeee9;
+  margin: 0 1rem;
+  padding: 1rem;
+  height: 100%;
+}

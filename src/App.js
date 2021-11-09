@@ -1,13 +1,10 @@
 import { Box, Container, Grid } from '@chakra-ui/react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Home from './components/home';
-import MyTeam from './components/myTeam';
 import Navigation from './components/navigation';
-import PokemonDetails from './components/pokemonDetails';
 import React from 'react';
-import Search from './components/search';
 
 function App() {
   return (
@@ -21,12 +18,9 @@ function App() {
       </Box>
       <Container>
         <Box>
-          <Switch>
-            <Route path="/" exact={true} component={Home} />
-            <Route path="/pokemon/:id" component={PokemonDetails} />
-            <Route path="/team" component={MyTeam} />
-            <Route path="/search" component={Search} />
-          </Switch>
+          <Routes>
+            <Route path="/welcome" exact={true} element={<Home />} />
+          </Routes>
         </Box>
       </Container>
     </HashRouter>
