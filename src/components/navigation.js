@@ -21,7 +21,7 @@ const Navigation = () => {
           <MenuItem>
             <Link
               color="teal.500"
-              to="/welcome"
+              to="/"
               fontSize="2xl"
               style={{ textDecoration: 'none' }}
             >

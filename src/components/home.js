@@ -4,7 +4,6 @@ import React from 'react';
 import Search from './search';
 
 const Home = () => {
-  console.log('whats up');
   return (
     <Box textAlign="center" fontSize="xl">
       <Heading mt={10} color="teal.500">
